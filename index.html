@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Beach Resort</title>
+    
+    <!-- enlace a favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- enlace a font awesome 4.7 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- tengo una fuente descargada, pero otra enlazada de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet"> 
+
+    <!-- enlace al estilo -->
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+<body>
+<!-- *************** NAV **************** -->
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a class="enlace" href="#">HOME</a>
+                <a class="enlace" href="#">BOOK NOW</a>
+                <a class="enlace" href="#info">OUR RESORT</a>
+                <a class="enlace" href="#accommodation">ACCOMMODATION</a>
+                <a class="enlace" href="#photos">ISLAND GALERY</a>
+                <a class="enlace" href="#contact">CONTACT</a>
+                <!-- el último botón es el icono del menu hamburguesa -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+       
+            <a href="#" id="arriba"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+        </nav>
+
+<!-- ************** HERO SECTION ************** -->
+        <section id="myhero">
+            <video autoplay muted  loop id="myVideo">
+                <source src="./videos/piscina.mp4" type="video/mp4">
+            </video>
+            
+            <div id="titulo4">
+                <h1>WHITE BEACH RESORT</h1>
+                <h4>BORACAY ISLAND, PHILIPPINES</h4>
+                
+
+        </section>
+
+<!-- ************** SECTION 1 ************** -->
+        <!-- MONTAMOS UN GRID DE 2 COLUMNAS TRAS EL TÍTULO -->
+        <section id="info">
+            <div class="titulo-section">
+                OUR RESORT
+            </div>
+
+            <div class="grid2">
+                <div class="col2">
+                   <img src="./images/Beach-Bed.jpg" alt="Sunbathing">
+                </div>
+                <div class="col2">
+                    <br> 
+                   <p>Our beach resort is in <strong> Boracay Island</strong>, a destination that is considered as among the most captivating places in the tropics. Truth is, its long, white-sand beaches have been recognized by many as among the best in the world.</p>
+<br>
+                    <p>Here, the beauty of nature, fun, and leisure blend together, making it a recreational haven that is second to none. After a dip in the crystal clear waters, you can engage in relaxing activities of your choice. Comb the beaches on horseback or play an exciting game of volleyball or frisbee on the sand. You can even hop from one beach to another or ride an outrigger (locally known as “paraw”) and sail to the other side of the island. Truly, it is a place that never gets tired of giving travelers reasons to linger.</p>
+                </div>
+
+                <div class="col2">
+                    <br>
+                    <p>For travelers desiring to experience the best of the tropics,  <strong>White Beach Resort</strong> presents an offer that is hard to match. With Boracay Island, Philippines’ most inviting shores put alongside the resort’s tastefully appointed guestrooms and high-level service aimed at guests’ comfort, our accommodation has become a most favored retreat in this tropical destination.</p>
+                    <p>Presenting a blend of tropical urban and Zen minimalist designs, our 17 rooms and suites are ideal for solo travelers, couples on honeymoons, and families and friends on vacation. You may choose among 4 Deluxe Rooms and 10 Superior Rooms. Or, for a more luxurious holiday, stay in one of our 3 Seaview Rooms, which redefines luxury with its first-class features including a private verandah and infinity pool that overlook the white-sand beach.</p>
+                    
+                    <p>The resort also boasts a beachfront location in Station 1, an area known as the most peaceful in all of the island’s 4-kilometer White Beach. This address does not only let you laze under the sun while savoring the calm; it also puts you close to top attractions like Diniwid and Willy’s Rock. Moreover, a short stroll on the beach or a brief rickshaw ride will already take you to Station 2, the island’s nightlife and shopping center.</p> 
+                       
+                </div>
+                <div class="col2">
+                    <img class="img2" src="./images/piscina.jpg" alt="piscina">
+                </div>
+            </div>
+        </section>
+<!-- ************** SECTION 3  ************** -->
+        <section id="accommodation">
+             <!-- título de sección -->
+             <div class="titulo-section">
+                ACCOMMODATION
+             </div>
+             <!-- div.grid4>div.col4*4 -->
+             <div class="grid4">
+                <div class="col4">
+                    <div class="card">
+                        <img src="./images/room3.jpg" alt="Seaview Room" >
+                        <div class="roomtexto">
+                          <h4><b>Seaview Room</b></h4>
+                          <!-- vínculo con forma de botón-->
+                          <a href="#">Learn more</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col4">
+                    <div class="card">
+                        <img src="./images/room1.jpg" alt="Deluxe Room" >
+                        <div class="roomtexto">
+                          <h4><b>Deluxe Room</b></h4>
+                          <!-- vínculo con forma de botón-->
+                          <a href="./accomodation.html">Learn more</a>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col4">
+                    <div class="card">
+                        <img src="./images/room2.jpg" alt="Superior Room" >
+                        <div class="roomtexto">
+                          <h4><b>Superior Room</b></h4>
+                          <!-- vínculo con forma de botón-->
+                          <a href="#">Learn more</a>
+                        </div>
+                      </div>
+                </div>
+             </div>
+        </section>
+
+       
+
+<!-- ************** NUEVA ************** -->
+<section id="photos">
+    <!-- título de sección -->
+    <div class="titulo-section">
+       ISLAND GALERY
+    </div>
+<!-- Container for the image gallery -->
+<div class="section">
+<div class="container3">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src="./images/snorkling.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img src="./images/roca.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="./images/whitebeach.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="./images/lancha.jpeg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="./images/arroz.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="./images/islas.jpg" style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="./images/snorkling.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./images/roca.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./images/whitebeach.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./images/lancha.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./images/arroz.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./images/islas.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+        <section id="contact">
+            <!-- título de sección -->
+            <div class="titulo-section">
+                CONTACT US
+            </div>
+
+            <div class="grid2">
+                <!-- va a contener el maps -->
+                <div class="col2">
+                  <!-- necesito un div container-->
+                  <div class="container2"> 
+                    <!-- le quito width y height y le pongo class --> 
+                    <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15612.730688806823!2d121.91544922426579!3d11.961851164381343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c13fd6b1521%3A0xee50d80867c3f989!2sWhite%20Beach%20de%20Boracay%20Resort!5e0!3m2!1ses!2ses!4v1671481112259!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+
+
+                <div class="col2">
+                    <ul>
+                        <br>
+                        <li>Address: Aklan West Rd Boracay, White Beach Path, Malay, 5608 Aklan, Filipinas</li>
+                        <br>
+                        <li>Phone: 0079 156 151 615</li>
+                        <br>
+                        <li>Email: info@whitebeachboracay.com</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+<!-- ************** FOOTER ************** -->
+        <footer>
+            <div class="grid3">
+                <div class="col3">
+                    <img src="./images/android-chrome-512x512.png" alt="Boracay Resort logo">
+                </div>
+                
+                <div class="col3">
+                    <p class="parrafooter">Follow us on:</p>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+
+                <div class="col3">
+                    <p class="parrafooter"> <h1>It's more fun in the Philippines!!</p></h1>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    
+    <script src="./js/funciones.js"></script>
+
+</body>
+</html>
