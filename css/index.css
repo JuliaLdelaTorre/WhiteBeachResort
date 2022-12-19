@@ -1,0 +1,373 @@
+/********************************************************************/
+/*  Web White Beach Resort - Estilo de landing page                     */
+/*  CSS de White Beach Resort                                           */
+/*  Autora: Julia López De la Torre                                 */
+/********************************************************************/
+
+/************************* ESTILO GENERAL ***************************/
+
+@font-face {
+    font-family: titulos;
+    src: url('./../fonts/Quicksand-VariableFont_wght.ttf');}
+
+@font-face {
+  font-family:titulomyhero; ;
+  src: url('./../fonts/DMSerifDisplay-Regular.ttf');
+}
+
+
+* {box-sizing:border-box;}     /* del borde pa dentro tó es caja */
+
+html {scroll-behavior: smooth;} /* cambios de scroll en vínculos, suaves */
+
+body {font-family: 'Montserrat', sans-serif;
+      background-color: white; 
+      margin:0;padding:0;         /* "por defecto del navegador" anulados */
+}
+p {color: #333;
+  font-size: 1rem;
+}
+
+section {padding:0.5% 0;} /* en todas las secciones debe correr el aire */
+
+.titulo-section {font-family: titulos;
+            font-size:2rem;
+            color:rgb(20, 225, 211);
+            text-align:center;
+            width:50%;
+            margin:4% auto;}
+
+.enlace {text-decoration: none;}  /* quitar subrayado */
+
+.enlace:hover {color:#044675;}
+
+/******************** ESTILO DE NAV ****************************************/
+ 
+/* el contendor de la barra es nav, y lo pongo sticky */
+
+nav {position:sticky; /* se queda "pegado" */
+    text-align: center;
+    align-items: center;
+     top:0;           /* a la parte superior */
+     z-index: 99;     /* podría tener 98 capas por debajo */
+     opacity: 0.8;                 
+     height: 100%;
+     }
+
+.fa-arrow-up {position:fixed;
+              bottom:25px;
+              right:20px;}
+
+#arriba {color:white;}              
+
+/* Add a black background color to the top navigation */
+ .topnav {color: white;
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left; 
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  } 
+
+/***** MEDIA QUERIES DE LA BARRA DE NAVEGACIÓN SOLO *************************/
+
+   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} 
+
+
+/*********************** ESTILO HERO SECTION  *****/
+#myVideo {
+    position: relative;
+      right: 0;
+      bottom: 0;
+      width: 100%; /* se adapta al espacio que hay exactamente */
+      height: 100vh;
+    }
+
+    /* vamos a poner el título SUPERPUESTO sobre el video */
+#titulo4 { /* lo muevo hacia arriba */
+        position: relative; /* los dos son relative, independientes */
+        text-align: center;
+        top: -300px;         
+        height:150px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+        } 
+
+        
+/*********************** ESTILO SECTION 1 ************************************/
+
+.grid2 {display:grid;
+        grid-template-columns: 45% 45%;
+        padding: 4%;}
+
+.col2 {padding:4%;}
+
+.col2 img {width:100%;
+          border-radius: 2%;} 
+        
+.img2 {width:100%;
+      border-radius: 2%;
+      height: 60%;}
+
+/*********************** ESTILO NUEVA ************************************/
+
+img {
+  vertical-align: middle;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container3 {
+  position: relative;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  height: 60%;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+/********************** ESTILO SECTION 3 **********************************/
+.grid4 {display:grid;
+        grid-template-columns:33% 33% 33% ;}
+
+.col4 {padding:4%;}
+
+.roomtexto {padding-left: 2%;
+            padding-bottom: 2%;}
+
+/* Add shadows to create the "card" effect */
+.card { box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;}
+
+.card img {    /***** selector contextual, img solo dentro de una .card *****/
+                   width:92%;
+                   height:300px; /**** no debería retocarse el alto, mejor la imagen */
+                   margin:4%; /* efecto polaroid , opcional */
+                   border-radius:2%; 
+                   filter:brightness();   /* opcional */
+                   transition: 2s; /* tarda 1 segundo en terminar un cambio */
+        }
+.card img:hover {    /* al poner el ratón encima, se aclara , opcional */
+            opacity:1;
+        }
+          /* On mouse-over, add a deeper shadow */
+.card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          }
+          
+          /* Add some padding inside the card container */
+.container {padding: 2px 2px;}
+            
+.card a {text-decoration: none;
+         background-color: rgb(85, 85, 85);
+         color:white;
+         font-weight:bold;
+         border-radius:5px;
+         padding:10px;
+         display:inline-block; /* hay distintos tipos de display: none (ocultar), block
+                                  (como un bloque), inline (como un elemento en linea),
+                                  inline-block (bloque arriba y abajo, enlinea en horizontal */
+         margin-bottom:2px;
+                                }
+
+.card a:hover {background-color: rgb(85,85,85,0.7);}
+
+
+/*********************** ESTILO DE CONTACTO ************************************/
+
+.container2 {  /* utilizo este para maps cuadrado */
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio (divide 1 by 1 = 1) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe { /* es común para galería y contacto */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/*********************** ESTILO DEL FOOTER *********************/
+footer {background-color: rgba(0, 0, 0, 0.5);}
+
+.parrafooter {color: #f1f1f1;}
+
+.grid3 {display:grid;
+        grid-template-columns: 25% 25% 50%;}
+.col3 {padding:6%;}
+
+.col3 img {width:30%;
+           display:block; /* convierte en bloque algo que no lo es */
+           margin:auto;}
+
+/***************** ESTILO DE ICONOS DE REDES SOCIALES FONT AWESOME *********/
+.fa {
+  box-sizing:content-box;
+  padding: 10px;
+  font-size: 20px;
+  width: 30px; 
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 15%;
+  color: white;
+  background: rgb(20, 225, 211);
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+
+/*********************** MEDIA QUERIES ***********************************/
+
+@media only screen and (width<=900px){
+      #titulo {width:60%;
+               left:20%;}
+      #titulo4 {top:-200px;}
+      .grid2 {grid-template-columns: 100%;}
+      .grid4 {grid-template-columns: 50% 50%;} /* pasar de 3 cols a 2 por fila */
+      .grid3 {grid-template-columns:50% 50%;} /* las columnas del footer, pasan a dos líneas */
+      #lista2 {margin-top:-75px;} /* hack para conseguir que la lista de ideas parezca una */
+}
+
+@media only screen and (width<=600px){
+    #titulo {width:80%;
+               left:10%;}
+    #titulo4 {top:-200px;}
+    .grid4{grid-template-columns: 100%;}
+}
